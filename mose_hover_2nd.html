@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .outer {
+            width: 200px;
+            position: relative;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .Branch {
+            position: relative;
+            background-color: #fff;
+            border: 1px solid #d1d1d1;
+            border-radius: 5px;
+            text-align: center;
+            width: 150px;
+            height: 50px;
+            line-height: 50px; 
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .Branch:hover {
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        .item {
+            position: absolute;
+            display: none;
+            left: 0;
+            width: 150px;
+            top: 60px; 
+            background-color: #fff;
+            border: 1px solid #d1d1d1;
+            border-radius: 5px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1; 
+        }
+
+        .Branch:hover + .item {
+            display: block;
+        }
+
+        li {
+            border-bottom: 1px solid #f0f0f0;
+            padding: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        li:hover {
+            background-color: #f9f9f9;
+        }
+
+        ul {
+            list-style-type: none; 
+            padding: 0; /* Remove default padding */
+            margin: 0; /* Remove default margin */
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="Branch">Branch</div>
+        <div class="item">
+            <ul>
+                <li>CSE</li>
+                <li>IT</li>
+                <li>EEE</li>
+                <li>ME</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
