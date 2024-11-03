@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        /* #toggle {
+            display: none; 
+        } */
+        label {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        /* Show the table when the checkbox is checked */
+        #toggle:checked + label + table {
+            display: table;
+        }
+        /* Hide the table by default */
+        table {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <p>Show the different branches name </p>
+    <input type="checkbox" id="toggle">
+    <label for="toggle">Show Branches</label>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Branch Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>CSE</td></tr>
+            <tr><td>IT</td></tr>
+            <tr><td>ECE</td></tr>
+            <tr><td>MEC</td></tr>
+        </tbody>
+    </table>
+</body>
+</html>
